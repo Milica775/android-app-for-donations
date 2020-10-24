@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/card_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:divider="@color/design_default_color_error"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_FLName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Ime i prezime:"
+        android:textSize="25dp" />
+
+
+    <TextView
+        android:id="@+id/tv_email1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Adresa:"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/tv_sumOfMeals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Broj obroka:"
+        android:textSize="25dp" />
+
+
+
+
+
+
+
+</LinearLayout>

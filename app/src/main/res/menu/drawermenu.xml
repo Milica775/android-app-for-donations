@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu">
+    <item
+        android:id="@+id/reg"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="Napravi nalog" />
+    <item
+        android:id="@+id/donAll"
+        android:icon="@drawable/ic_baseline_history_24"
+        android:title="Pregledaj sve donacije" />
+    <item
+        android:id="@+id/don"
+        android:icon="@drawable/ic_baseline_history_24"
+        android:title="Pregledaj svoje donacije" />
+    <item
+        android:id="@+id/add"
+        android:icon="@drawable/ic_baseline_add_circle_24"
+        android:title="Dodaj novu donaciju" />
+    <item
+        android:id="@+id/user"
+        android:icon="@drawable/ic_baseline_list_24"
+        android:title="Spisak donatora" />
+    <item
+        android:id="@+id/In"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Uloguj se" />
+    <item
+        android:id="@+id/Out"
+        android:icon="@drawable/ic_baseline_person_outline_24"
+        android:title="Odjavi se" />
+
+</menu>

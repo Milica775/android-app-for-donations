@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="448dp"
+        android:layout_height="100dp"
+
+        android:background="@drawable/ic_wave" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/eTFirstName"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="165dp"
+            android:background="@drawable/round_border"
+            android:drawableLeft="@drawable/ic_baseline_edit_24"
+            android:ems="10"
+            android:hint="Ime"
+            android:inputType="textEmailAddress"
+            android:padding="10dp" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/eTLastName"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="165dp"
+        android:background="@drawable/round_border"
+        android:drawableLeft="@drawable/ic_baseline_edit_24"
+        android:ems="10"
+        android:hint="Prezime"
+        android:inputType="textEmailAddress"
+        android:padding="10dp" />
+
+
+
+
+
+    <EditText
+        android:id="@+id/eTemail"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="165dp"
+        android:background="@drawable/round_border"
+        android:drawableLeft="@drawable/ic_outline_email_24"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+ />
+
+    <EditText
+        android:id="@+id/eTpassword"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="165dp"
+        android:background="@drawable/round_border"
+        android:drawableLeft="@drawable/ic_outline_lock_24"
+        android:ems="10"
+        android:hint="Lozinka"
+        android:inputType="textPassword"
+        android:padding="10dp"
+       />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/update"
+            android:layout_width="186dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_edit_24" />
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_delete_24"
+
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
