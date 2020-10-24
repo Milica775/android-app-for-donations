@@ -101,7 +101,6 @@ public class Admin extends AppCompatActivity implements Adapter.OnNoteListener {
                         donations.add(don);
 
                 }
-                // adapter=new Adapter(getApplicationContext(), donations, this);
                 rView.setAdapter(adapter);
             }
 

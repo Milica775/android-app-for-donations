@@ -1,35 +1,15 @@
 package com.example.projectapp;
-
-import android.app.AlertDialog;
-import android.content.ClipData;
 import android.content.Intent;
 import android.os.Bundle;
-
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.FirebaseFirestore;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
-
-import android.view.LayoutInflater;
-import android.view.View;
-
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageView;
 
-import java.util.HashMap;
-import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -120,37 +100,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-    }
-
-    private void updDelUser() {
-
-        final AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
-        LayoutInflater inflater = getLayoutInflater();
-        final View dialogView = inflater.inflate(R.layout.update_user, null);
-        dialogBuilder.setView(dialogView);
-
-        final EditText firstName = (EditText) dialogView.findViewById(R.id.eTFirstName);
-        final EditText lastName = (EditText) dialogView.findViewById(R.id.eTNumOfMeals);
-        final EditText email = (EditText) dialogView.findViewById(R.id.eTemail);
-        final EditText password = (EditText) dialogView.findViewById(R.id.eTpassword);
-        final ImageView btnUpdate = dialogView.findViewById(R.id.update);
-        final ImageView btnDelete = dialogView.findViewById(R.id.delete);
-        FirebaseFirestore fStore= FirebaseFirestore.getInstance();
-
-        FirebaseUser u=fAuth.getCurrentUser();
-
-        String userID=u.getUid();
-
-        DocumentReference dRef=fStore.collection("users").document(userID);
-
-
-
-
-          String firstName1=firstName.getText().toString();
-
-        final AlertDialog b = dialogBuilder.create();
-        b.show();
-        dRef.update("firstName",firstName1);
     }
 
     private void updateUI() {

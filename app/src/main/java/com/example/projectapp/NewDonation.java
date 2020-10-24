@@ -79,8 +79,6 @@ public class NewDonation extends AppCompatActivity {
                 String email=auth.getCurrentUser().getEmail();
                 Donation donation= new Donation(addressString,numOfMealString,email,dateString,id);
 
-                /*long dataTime= 999999999-System.currentTimeMillis();
-                String orderTime=String.valueOf(dataTime);*/
                 myRef.child(id).setValue(donation).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {

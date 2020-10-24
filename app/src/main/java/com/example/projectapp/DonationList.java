@@ -213,7 +213,7 @@ public class DonationList extends AppCompatActivity implements Adapter.OnNoteLis
 
                 if (!TextUtils.isEmpty(addressString)// && !TextUtils.isEmpty(numOfMealString)
                          && !TextUtils.isEmpty(dateString)) {
-                    updateArtist(id, addressString, email1, numOfMealString, dateString);
+                    updateDonation(id, addressString, email1, numOfMealString, dateString);
                      b.dismiss();
                 }
 
@@ -224,7 +224,7 @@ public class DonationList extends AppCompatActivity implements Adapter.OnNoteLis
 
 
 
-    private void updateArtist(String id,  String addressString, String email, int numOfMealString, String date) {
+    private void updateDonation(String id,  String addressString, String email, int numOfMealString, String date) {
         DatabaseReference dR = FirebaseDatabase.getInstance().getReference("Donation").child(id);
         Donation don=new Donation(addressString,numOfMealString,email,date,id);
         dR.setValue(don);

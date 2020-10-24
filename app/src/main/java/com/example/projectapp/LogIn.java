@@ -25,7 +25,6 @@ public class LogIn extends AppCompatActivity {
     Button btnLog;
     ProgressBar progressBar;
     FirebaseAuth firebaseAuth;
-   // Spinner spinner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,12 +35,9 @@ public class LogIn extends AppCompatActivity {
         password = findViewById(R.id.password);
         btnLog = findViewById(R.id.btnLog);
         progressBar = findViewById(R.id.progressBar);
-       // spinner=findViewById(R.id.spinner);
 
         firebaseAuth = FirebaseAuth.getInstance();
 
-       // ArrayAdapter<CharSequence> adapter= ArrayAdapter.createFromResource(this, R.array.userType, R.layout.support_simple_spinner_dropdown_item);
-        //spinner.setAdapter(adapter);
 
         btnLog.setOnClickListener(new View.OnClickListener(){
 
@@ -74,7 +70,6 @@ public class LogIn extends AppCompatActivity {
                 firebaseAuth.signInWithEmailAndPassword(emailString,passwordString).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                       // String item= spinner.getSelectedItem().toString();
 
                         if(task.isSuccessful()) {
                             Toast.makeText(LogIn.this, "Uspjesno ste se ulogovali!", Toast.LENGTH_SHORT).show();

@@ -74,7 +74,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>{
 
     public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         private TextView tvAddress,tvNumOfMeals,tvEmail,tvDate;
-        ImageView tvUpdate,tvDelete;
         OnNoteListener  onNoteListener;
 
         public ViewHolder(@NonNull View itemView, OnNoteListener onNoteListener) {
